@@ -57,6 +57,7 @@ class DynamicController {
       if (!result) {
         return res.status(404).send(`${collection} with ids '${ids}' not found`);
       }
+      
       return res.json(result);
     };
   }

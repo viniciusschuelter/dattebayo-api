@@ -1,15 +1,16 @@
 {
   "name": "dattebayo-api",
   "version": "1.0.0",
-  "description": "",
+  "description": "Express + TypeScript API Server",
   "main": "index.js",
   "scripts": {
+    "start": "node src/server.ts",
     "dev": "nodemon src/server.ts",
-    "build": "rm -rf build/ && prettier --write src/ && tsc",
+    "build": "rm -rf build/ && prettier --write source/ && tsc",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "",
+  "author": "Vinicius Schuelter",
   "license": "ISC",
   "dependencies": {
     "@types/express": "^4.17.17",
@@ -18,5 +19,8 @@
     "nodemon": "^3.0.1",
     "ts-node": "^10.9.1",
     "typescript": "^5.1.6"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.13"
   }
 }

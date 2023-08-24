@@ -10,5 +10,4 @@ collectionNames.forEach((collection: string) => {
     router.get(`/${collection}/:ids`, dynamicController[`getByIds${collection}`]);
 });
 
-
 export = router;

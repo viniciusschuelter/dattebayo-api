@@ -6,12 +6,11 @@ const router = express.Router();
 const dynamicController = new DynamicController();
 
 collectionNames.forEach((collection: string) => {
-  console.log(dynamicController[`getAll${collection}`]);
   console.log(`/${collection}`);
     // @ts-ignore
     router.get(`/${collection}`, dynamicController[`getAll${collection}`]);
-    // this.router.get(`/${collection}/search`, this.dynamicController[`getByName${collection}`]);
-    // this.router.get(`/${collection}/:id`, this.dynamicController[`getById${getById}`]);
+    // @ts-ignore
+    router.get(`/${collection}/:ids`, dynamicController[`getByIds${collection}`]);
 });
 
 

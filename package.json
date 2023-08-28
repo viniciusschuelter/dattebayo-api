@@ -2,9 +2,9 @@
   "name": "dattebayo-api",
   "version": "1.0.0",
   "description": "Express + TypeScript API Server",
-  "main": "index.js",
+  "main": "src/server.ts",
   "scripts": {
-    "start": "node src/server.ts",
+    "start": "ts-node --esm src/server.ts",
     "dev": "nodemon src/server.ts",
     "build": "rm -rf build/ && prettier --write source/ && tsc",
     "test": "echo \"Error: no test specified\" && exit 1"

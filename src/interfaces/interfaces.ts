@@ -5,7 +5,7 @@ export enum CollectionNameEnum {
     akatsuki = 'akatsuki',
     clans = 'clans',
     kara = 'kara',
-    kekkeigenkai = 'kekkeigenkai',
+    kekkeigenkai = 'kekkei-genkai',
     tailedbeasts = 'tailedbeasts',
     teams = 'teams',
     villages = 'villages'

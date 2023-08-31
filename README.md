@@ -10,30 +10,30 @@ comprehensive guide to accessing data from the Naruto universe via our API.
 The base URL for the API is <code>https://dattebayo-api.onrender.com</code>.
 </p>
 <ol>
-<li><a href="docs#introduction">Introduction</a></li>
+<li><a href="#introduction">Introduction</a></li>
 <li>
-  <a href="docs#collections">Collections</a>
+  <a href="#collections">Collections</a>
   <ul>
-    <li><a class="capitalize" href="docs#characters">characters</a></li>
-    <li><a class="capitalize" href="docs#clans">clans</a></li>
-    <li><a class="capitalize" href="docs#villages">villages</a></li>
+    <li><a class="capitalize" href="#characters">characters</a></li>
+    <li><a class="capitalize" href="#clans">clans</a></li>
+    <li><a class="capitalize" href="#villages">villages</a></li>
     <li>
-      <a class="capitalize" href="docs#kekkei-genkai">kekkei-genkai</a>
+      <a class="capitalize" href="#kekkei-genkai">kekkei-genkai</a>
     </li>
     <li>
-      <a class="capitalize" href="docs#tailed-beasts">tailed-beasts</a>
+      <a class="capitalize" href="#tailed-beasts">tailed-beasts</a>
     </li>
-    <li><a class="capitalize" href="docs#teams">teams</a></li>
-    <li><a class="capitalize" href="docs#akatsuki">akatsuki</a></li>
-    <li><a class="capitalize" href="docs#kara">kara</a></li>
+    <li><a class="capitalize" href="#teams">teams</a></li>
+    <li><a class="capitalize" href="#akatsuki">akatsuki</a></li>
+    <li><a class="capitalize" href="#kara">kara</a></li>
   </ul>
 </li>
 <a name="introduction"></a>
 <li>
-  <a href="docs#endpoints">Endpoints</a>
+  <a href="#endpoints">Endpoints</a>
   <ul>
-    <li><a href="docs#get-all-items">Get All Items</a></li>
-    <li><a href="docs#get-items-by-ids">Get Items by IDs</a></li>
+    <li><a href="#get-all-items">Get All Items</a></li>
+    <li><a href="#get-items-by-ids">Get Items by IDs</a></li>
   </ul>
 </li>
 </ol>

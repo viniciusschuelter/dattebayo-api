@@ -30,11 +30,11 @@ cron.schedule("14 * * * *", () => getSomeChar());
 
 function getSomeChar()  {
     https.get(
-    'https://dattebayo-api.onrender.com/characters/1',
+    'https://freeproxy.io/o.php?b=5&f=norefer&_senable_sig=&pv=0&mobile=&u=MjgwNDo3ZjQ6NTE4ZTpmYzgyOjgwMjk6YTdmMDo1NGQ2OmQwMWJ8czovL2RhdHRlYmF5by1hcGkub25yZW5kZXIuY29tL2NoYXJhY3RlcnMvMXxNb3ppbGxhLzUuMCAoV2luZG93cyBOVCAxMC4wOyBXaW42NDsgeDY0KSBBcHBsZVdlYktpdC81MzcuMzYgKEtIVE1MLCBsaWtlIEdlY2tvKSBDaHJvbWUvMTE2LjAuMC4wIFNhZmFyaS81MzcuMzZ8OTQxNDU4',
     resp => {
             let data = '';
             resp.on('data', (chunk: any) => data += chunk);
-            resp.on('end', () => console.log(JSON.parse(data).name));
+            resp.on('end', () => console.log(data || 'end'));
         })
         .on("error", (err) => {console.log("Error: " + err.message);
     });

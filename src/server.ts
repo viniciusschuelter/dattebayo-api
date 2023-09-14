@@ -25,12 +25,12 @@ const httpServer = http.createServer(router);
 const PORT: any = process.env.PORT ?? 8080;
 httpServer.listen(PORT, () => console.log(`The server is running on port: ${PORT}`));
 
-cron.schedule("14 * * * *", () => getSomeChar());
+setInterval(() => getSomeChar(), 1000 * 60 * 14);
 
 
 function getSomeChar()  {
     https.get(
-    'https://freeproxy.io/o.php?b=5&f=norefer&_senable_sig=&pv=0&mobile=&u=MjgwNDo3ZjQ6NTE4ZTpmYzgyOjgwMjk6YTdmMDo1NGQ2OmQwMWJ8czovL2RhdHRlYmF5by1hcGkub25yZW5kZXIuY29tL2NoYXJhY3RlcnMvMXxNb3ppbGxhLzUuMCAoV2luZG93cyBOVCAxMC4wOyBXaW42NDsgeDY0KSBBcHBsZVdlYktpdC81MzcuMzYgKEtIVE1MLCBsaWtlIEdlY2tvKSBDaHJvbWUvMTE2LjAuMC4wIFNhZmFyaS81MzcuMzZ8OTQxNDU4',
+    'https://dattebayo-api.onrender.com/charaters/1',
     resp => {
             let data = '';
             resp.on('data', (chunk: any) => data += chunk);

@@ -3,7 +3,6 @@ import https from 'https';
 import express, { Express } from 'express';
 import routes from './routes/index.route';
 import cors from 'cors';
-import cron from 'node-cron';
 
 const router: Express = express();
 
@@ -30,7 +29,7 @@ setInterval(() => getSomeChar(), 1000 * 60 * 14);
 
 function getSomeChar()  {
     https.get(
-    'https://dattebayo-api.onrender.com/charaters/1',
+    'https://dattebayo-api.onrender.com',
     resp => {
             let data = '';
             resp.on('data', (chunk: any) => data += chunk);

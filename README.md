@@ -2,7 +2,6 @@
 
 ###### This project was generated with [Node](https://github.com/nodejs/node)
 
-
 <strong>Documentation</strong>
 <p>
 Welcome to the Dattebayo API documentation! This documentation provides a
@@ -36,7 +35,9 @@ The base URL for the API is <code>https://dattebayo-api.onrender.com</code>.
     <li><a href="#get-items-by-ids">Get Items by IDs</a></li>
   </ul>
 </li>
+<li><a href="#postman-collection">Postman Collection</a></li>
 </ol>
+
 <h2>Introduction</h2>
 <p>
 The Dattebayo API is designed to provide developers with access to a rich
@@ -64,6 +65,7 @@ teams, Akatsuki, and Kara.
   </p>
 </li>
 </ul>
+
 <h3 class="capitalize">clans</h3>
 <p>Access details about various clans within the Naruto world.</p>
 <h4>Endpoints</h4>
@@ -81,6 +83,7 @@ teams, Akatsuki, and Kara.
   </p>
 </li>
 </ul>
+
 <h3 class="capitalize">villages</h3>
 <p>Fetch information about hidden villages in the Naruto universe.</p>
 <h4>Endpoints</h4>
@@ -98,6 +101,7 @@ teams, Akatsuki, and Kara.
   </p>
 </li>
 </ul>
+
 <h3 class="capitalize">kekkei-genkai</h3>
 <p>Discover the secrets of Kekkei-genkai and their unique abilities.</p>
 <h4>Endpoints</h4>
@@ -115,6 +119,7 @@ teams, Akatsuki, and Kara.
   </p>
 </li>
 </ul>
+
 <h3 class="capitalize">tailed-beasts</h3>
 <p>Learn about the powerful tailed beasts and their significance.</p>
 <h4>Endpoints</h4>
@@ -132,6 +137,7 @@ teams, Akatsuki, and Kara.
   </p>
 </li>
 </ul>
+
 <h3 class="capitalize">teams</h3>
 <p>Explore ninja teams and their dynamic compositions.</p>
 <h4>Endpoints</h4>
@@ -149,6 +155,7 @@ teams, Akatsuki, and Kara.
   </p>
 </li>
 </ul>
+
 <h3 class="capitalize">akatsuki</h3>
 <p>Uncover the enigmatic organization known as Akatsuki.</p>
 <h4>Endpoints</h4>
@@ -166,6 +173,7 @@ teams, Akatsuki, and Kara.
   </p>
 </li>
 </ul>
+
 <h3 class="capitalize">kara</h3>
 <p>Dive into the shadows with information about the organization Kara.</p>
 <h4>Endpoints</h4>
@@ -183,6 +191,7 @@ teams, Akatsuki, and Kara.
   </p>
 </li>
 </ul>
+
 <a name="endpoints"></a>
 <h2>Endpoints</h2>
 <a name="get-all-items"></a>
@@ -202,6 +211,7 @@ teams, Akatsuki, and Kara.
   </ul>
 </li>
 </ul>
+
 <a name="get-items-by-ids"></a>
 <h3>Get Items by IDs</h3>
 <p>Retrieve items by their IDs.</p>
@@ -218,6 +228,13 @@ teams, Akatsuki, and Kara.
   </ul>
 </li>
 </ul>
+
+<a name="postman-collection"></a>
+<h2>Postman Collection</h2>
+<p>
+Download the <a href="https://github.com/abosamra001/dattebayo-api-fork/blob/main/dattebayo-api.json" target="_blank">POSTMAN COLLECTION</a> JSON file and import it into the Postman app to enjoy testing it! 😉
+</p>
+
 <hr />
 
 ## Development server

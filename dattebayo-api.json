@@ -1,0 +1,428 @@
+{
+  "info": {
+    "name": "Dattebayo API - Naruto Universe",
+    "description": "Complete API collection for accessing Naruto universe data including characters, clans, villages, kekkei-genkai, tailed beasts, teams, Akatsuki, and Kara.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "variable": [
+    {
+      "key": "baseUrl",
+      "value": "https://dattebayo-api.onrender.com",
+      "type": "string"
+    }
+  ],
+  "item": [
+    {
+      "name": "Characters",
+      "item": [
+        {
+          "name": "Get All Characters",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/characters?page=1&limit=10",
+              "host": ["{{baseUrl}}"],
+              "path": ["characters"],
+              "query": [
+                {
+                  "key": "page",
+                  "value": "1",
+                  "description": "Current page number"
+                },
+                {
+                  "key": "limit",
+                  "value": "10",
+                  "description": "Number of items per page"
+                },
+                {
+                  "key": "name",
+                  "value": "",
+                  "description": "Filter by character name (optional)",
+                  "disabled": true
+                }
+              ]
+            },
+            "description": "Retrieve paginated list of all characters from Naruto universe"
+          }
+        },
+        {
+          "name": "Get Characters by IDs",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/characters/1,2,3",
+              "host": ["{{baseUrl}}"],
+              "path": ["characters", "1,2,3"]
+            },
+            "description": "Retrieve specific characters by their IDs (comma-separated)"
+          }
+        },
+        {
+          "name": "Search Characters by Name",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/characters?name=Naruto",
+              "host": ["{{baseUrl}}"],
+              "path": ["characters"],
+              "query": [
+                {
+                  "key": "name",
+                  "value": "Naruto",
+                  "description": "Search character by name"
+                }
+              ]
+            },
+            "description": "Search for characters by name"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Clans",
+      "item": [
+        {
+          "name": "Get All Clans",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/clans?page=1&limit=10",
+              "host": ["{{baseUrl}}"],
+              "path": ["clans"],
+              "query": [
+                {
+                  "key": "page",
+                  "value": "1",
+                  "description": "Current page number"
+                },
+                {
+                  "key": "limit",
+                  "value": "10",
+                  "description": "Number of items per page"
+                },
+                {
+                  "key": "name",
+                  "value": "",
+                  "description": "Filter by clan name (optional)",
+                  "disabled": true
+                }
+              ]
+            },
+            "description": "Retrieve paginated list of all clans"
+          }
+        },
+        {
+          "name": "Get Clans by IDs",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/clans/1,2,3",
+              "host": ["{{baseUrl}}"],
+              "path": ["clans", "1,2,3"]
+            },
+            "description": "Retrieve specific clans by their IDs"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Villages",
+      "item": [
+        {
+          "name": "Get All Villages",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/villages?page=1&limit=10",
+              "host": ["{{baseUrl}}"],
+              "path": ["villages"],
+              "query": [
+                {
+                  "key": "page",
+                  "value": "1",
+                  "description": "Current page number"
+                },
+                {
+                  "key": "limit",
+                  "value": "10",
+                  "description": "Number of items per page"
+                },
+                {
+                  "key": "name",
+                  "value": "",
+                  "description": "Filter by village name (optional)",
+                  "disabled": true
+                }
+              ]
+            },
+            "description": "Retrieve paginated list of all hidden villages"
+          }
+        },
+        {
+          "name": "Get Villages by IDs",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/villages/1,2,3",
+              "host": ["{{baseUrl}}"],
+              "path": ["villages", "1,2,3"]
+            },
+            "description": "Retrieve specific villages by their IDs"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Kekkei Genkai",
+      "item": [
+        {
+          "name": "Get All Kekkei Genkai",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/kekkei-genkai?page=1&limit=10",
+              "host": ["{{baseUrl}}"],
+              "path": ["kekkei-genkai"],
+              "query": [
+                {
+                  "key": "page",
+                  "value": "1",
+                  "description": "Current page number"
+                },
+                {
+                  "key": "limit",
+                  "value": "10",
+                  "description": "Number of items per page"
+                },
+                {
+                  "key": "name",
+                  "value": "",
+                  "description": "Filter by kekkei-genkai name (optional)",
+                  "disabled": true
+                }
+              ]
+            },
+            "description": "Retrieve paginated list of all kekkei-genkai"
+          }
+        },
+        {
+          "name": "Get Kekkei Genkai by IDs",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/kekkei-genkai/1,2,3",
+              "host": ["{{baseUrl}}"],
+              "path": ["kekkei-genkai", "1,2,3"]
+            },
+            "description": "Retrieve specific kekkei-genkai by their IDs"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Tailed Beasts",
+      "item": [
+        {
+          "name": "Get All Tailed Beasts",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/tailed-beasts?page=1&limit=10",
+              "host": ["{{baseUrl}}"],
+              "path": ["tailed-beasts"],
+              "query": [
+                {
+                  "key": "page",
+                  "value": "1",
+                  "description": "Current page number"
+                },
+                {
+                  "key": "limit",
+                  "value": "10",
+                  "description": "Number of items per page"
+                },
+                {
+                  "key": "name",
+                  "value": "",
+                  "description": "Filter by tailed beast name (optional)",
+                  "disabled": true
+                }
+              ]
+            },
+            "description": "Retrieve paginated list of all tailed beasts"
+          }
+        },
+        {
+          "name": "Get Tailed Beasts by IDs",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/tailed-beasts/1,2,3",
+              "host": ["{{baseUrl}}"],
+              "path": ["tailed-beasts", "1,2,3"]
+            },
+            "description": "Retrieve specific tailed beasts by their IDs"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Teams",
+      "item": [
+        {
+          "name": "Get All Teams",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/teams?page=1&limit=10",
+              "host": ["{{baseUrl}}"],
+              "path": ["teams"],
+              "query": [
+                {
+                  "key": "page",
+                  "value": "1",
+                  "description": "Current page number"
+                },
+                {
+                  "key": "limit",
+                  "value": "10",
+                  "description": "Number of items per page"
+                },
+                {
+                  "key": "name",
+                  "value": "",
+                  "description": "Filter by team name (optional)",
+                  "disabled": true
+                }
+              ]
+            },
+            "description": "Retrieve paginated list of all ninja teams"
+          }
+        },
+        {
+          "name": "Get Teams by IDs",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/teams/1,2,3",
+              "host": ["{{baseUrl}}"],
+              "path": ["teams", "1,2,3"]
+            },
+            "description": "Retrieve specific teams by their IDs"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Akatsuki",
+      "item": [
+        {
+          "name": "Get All Akatsuki Members",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/akatsuki?page=1&limit=10",
+              "host": ["{{baseUrl}}"],
+              "path": ["akatsuki"],
+              "query": [
+                {
+                  "key": "page",
+                  "value": "1",
+                  "description": "Current page number"
+                },
+                {
+                  "key": "limit",
+                  "value": "10",
+                  "description": "Number of items per page"
+                },
+                {
+                  "key": "name",
+                  "value": "",
+                  "description": "Filter by member name (optional)",
+                  "disabled": true
+                }
+              ]
+            },
+            "description": "Retrieve paginated list of all Akatsuki members"
+          }
+        },
+        {
+          "name": "Get Akatsuki by IDs",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/akatsuki/1,2,3",
+              "host": ["{{baseUrl}}"],
+              "path": ["akatsuki", "1,2,3"]
+            },
+            "description": "Retrieve specific Akatsuki members by their IDs"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Kara",
+      "item": [
+        {
+          "name": "Get All Kara Members",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/kara?page=1&limit=10",
+              "host": ["{{baseUrl}}"],
+              "path": ["kara"],
+              "query": [
+                {
+                  "key": "page",
+                  "value": "1",
+                  "description": "Current page number"
+                },
+                {
+                  "key": "limit",
+                  "value": "10",
+                  "description": "Number of items per page"
+                },
+                {
+                  "key": "name",
+                  "value": "",
+                  "description": "Filter by member name (optional)",
+                  "disabled": true
+                }
+              ]
+            },
+            "description": "Retrieve paginated list of all Kara members"
+          }
+        },
+        {
+          "name": "Get Kara by IDs",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/kara/1,2,3",
+              "host": ["{{baseUrl}}"],
+              "path": ["kara", "1,2,3"]
+            },
+            "description": "Retrieve specific Kara members by their IDs"
+          }
+        }
+      ]
+    }
+  ]
+}
